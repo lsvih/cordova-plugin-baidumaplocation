@@ -1,3 +1,9 @@
+# Install:
+
+````
+ionic cordova plugin add https://github.com/lsvih/cordova-plugin-baidumaplocation.git --variable ANDROID_KEY="<API_KEY_ANDROID>" --variable IOS_KEY="<API_KEY_IOS>"
+````
+
 # Ionic 3.x 2.x Usage:
 
 在需要使用此插件的 ts 文件中使用：
