@@ -1,5 +1,3 @@
-var exec = require('cordova/exec');
-
 var baidumap_location = {
     getCurrentPosition: function (successCallback, errorCallback, options) {
 
@@ -36,7 +34,7 @@ var baidumap_location = {
             // always truthy before we call into native
             timeoutTimer.timer = true;
         }
-        exec(win, fail, 'BaiduMapLocation', 'getCurrentPosition', [options]);
+        cordova.exec(win, fail, 'BaiduMapLocation', 'getCurrentPosition', [options]);
         return timeoutTimer
     }
 };
