@@ -1,3 +1,26 @@
+# Ionic 3.x 2.x Usage:
+
+在需要使用此插件的 ts 文件中使用：
+
+````
+import * as baidumap_location from "cordova-plugin-baidumaplocation/www/baidumap_location"
+````
+
+接着调用
+
+````
+baidumap_location.getCurrentPosition(res => {
+    console.log(JSON.stringify(res, null, 4));
+}, err => {
+    console.log(err)
+}
+````
+
+
+# 注意，此插件只能在有 Cordova 的 Runtime 中运行。
+
+
+
 # 百度地图定位Cordova插件，支持Android，IOS，ionic 1x 2x 均可使用
 
 ### UPDATE:
